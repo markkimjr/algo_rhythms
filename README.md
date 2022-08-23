@@ -1,2 +1,2 @@
 # algo_rhythms
-Algo practice
+daily algorithm practice
