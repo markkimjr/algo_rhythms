@@ -28,4 +28,5 @@ def test_brute_force_answer():
     assert get_product_of_array_except_self(test_case) == [24, 12, 8, 6]
 
 
-# TODO O(n)
+# TODO O(n) check O(n) answer
+
