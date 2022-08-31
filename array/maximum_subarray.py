@@ -64,9 +64,23 @@ def get_maximum_subarray(nums: list) -> int:
 
     return max_score
 
+def get_max_subarray_quicker(nums: list) -> int:
+    max_sum = nums[0]
+    cur_sum = 0
+
+    for n in nums:
+        if cur_sum < 0:
+            cur_sum = 0
+        cur_sum += n
+        max_sum = max(max_sum, cur_sum)
+
+    return max_sum
+
 
 def test_max_subarray():
     assert get_maximum_subarray(test_case) == 6
 
 # TODO search answer and refactor
 
+if __name__ == "__main__":
+    get_max_subarray_quicker(test_case)
