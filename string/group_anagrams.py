@@ -7,33 +7,23 @@ Input: strs = ["eat","tea","tan","ate","nat","bat"]
 Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
 """
 
+from collections import defaultdict
+
 TEST = ["eat","tea","tan","ate","nat","bat"]
 
-# brute force TODO find correct solution
+
+# O(m * n)
 def group_anagrams(strs: list) -> list:
-    solution = []
-    tracker = {}
+    solution = defaultdict(list)
+    for w in strs:
+        count = [0] * 26
 
-    for word in strs:
-        if tracker.get(len(word)):
-            tracker[len(word)].append(word)
-        else:
-            tracker[len(word)] = [word]
+        for c in w:
+            count[ord(c) - ord("a")] += 1
 
-    total_tracker = {}
-    for length, words in tracker.items():
-        for word in words:
-            c_counter = {word: {}}
-            for c in word:
-                c_counter[word][c] = c_counter[word][c].get(c, 0) + 1
+        solution[tuple(count)].append(w)
 
-            if total_tracker.get(length):
-                total_tracker[length].append(c_counter)
-            else:
-                total_tracker[length] = [c_counter]
-
-    for length, counted_words in total_tracker.items():
-        pass
+    return list(solution.values())
 
 
 if __name__ == "__main__":
