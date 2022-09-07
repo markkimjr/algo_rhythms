@@ -7,6 +7,7 @@ Explanation: "aba" is also a valid answer.
 """
 
 TEST = "bbbbdbbbb"
+import requests
 
 # O(n^3)
 def get_solution(s: str) -> str:
@@ -46,8 +47,3 @@ def get_solution2(s: str) -> str:
             r += 1
 
     return res
-
-
-
-if __name__ == "__main__":
-    get_solution2(TEST)
