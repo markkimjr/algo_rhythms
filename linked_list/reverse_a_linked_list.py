@@ -13,7 +13,7 @@ class ListNode:
         self.val = val
         self.next = next
 
-
+# O(n)
 def reverse_list(head: ListNode) -> ListNode:
     prev, curr = None, head
 
@@ -22,5 +22,4 @@ def reverse_list(head: ListNode) -> ListNode:
         curr.next = prev
         prev = curr
         curr = nxt
-
     return prev
