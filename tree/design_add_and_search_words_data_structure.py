@@ -27,7 +27,7 @@ wordDictionary.search("b.."); // return True
 """
 
 # brute force
-# TODO find optimal solution
+# TODO review
 class WordDictionary:
 
     def __init__(self):
@@ -62,7 +62,52 @@ class WordDictionary:
         return False
 
 
+class TrieNode:
+    def __init__(self):
+        self.children = {}
+        self.last_word = False
+
+
+class WordDictionaryDFS:
+    def __init__(self):
+        self.root = TrieNode()
+
+    def addWord(self, word: str) -> None:
+        cur = self.root
+        for l in word:
+            if l not in cur.children:
+                cur.children[l] = TrieNode()
+            cur = cur.children[l]
+        cur.last_word = True
+
+    def searchWord(self, word: str) -> bool:
+        def dfs(idx, node):
+            cur = node
+            for i in range(idx, len(word)):
+                l = word[i]
+                if l == ".":
+                    for child in cur.children.values():
+                        if dfs(i + 1, child):
+                            return True
+                    return False
+                else:
+                    if l not in cur.children:
+                        return False
+                    cur = cur.children[l]
+            return cur.last_word
+        return dfs(0, self.root)
+
 # Your WordDictionary object will be instantiated and called as such:
 # obj = WordDictionary()
 # obj.addWord(word)
 # param_2 = obj.search(word)
+
+
+if __name__ == "__main__":
+    obj = WordDictionaryDFS()
+    obj.addWord("blm")
+    obj.addWord("bad")
+    obj.addWord("sad")
+    obj.addWord("happy")
+    exists = obj.searchWord("bad")
+    exists2 = obj.searchWord("b..")

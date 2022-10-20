@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa2a78fc-c175-41e7-a2fb-005359a71b12" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tree/design_add_and_search_words_data_structure.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tree/invert_binary_tree.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tree/maximum_depth_of_binary_tree.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tree/same_tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linked_list/reverse_a_linked_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/linked_list/reverse_a_linked_list.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tree/subtree_of_another_tree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tree/design_add_and_search_words_data_structure.py" beforeDir="false" afterPath="$PROJECT_DIR$/tree/design_add_and_search_words_data_structure.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +44,28 @@
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.same_tree">
+  <component name="RunManager" selected="Python.design_add_and_search_words_data_structure">
+    <configuration name="design_add_and_search_words_data_structure" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/local/bin/python3.9" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tree" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tree/design_add_and_search_words_data_structure.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="encode_and_decode_strings" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -111,27 +129,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="palindromic_substrings" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="/usr/local/bin/python3.9" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/string" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/string/palindromic_substrings.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="same_tree" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -154,19 +151,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.palindromic_substrings" />
       <item itemvalue="Python.encode_and_decode_strings" />
       <item itemvalue="Python.merge_two_sorted_lists" />
       <item itemvalue="Python.maximum_depth_of_binary_tree" />
       <item itemvalue="Python.same_tree" />
+      <item itemvalue="Python.design_add_and_search_words_data_structure" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.design_add_and_search_words_data_structure" />
         <item itemvalue="Python.same_tree" />
         <item itemvalue="Python.maximum_depth_of_binary_tree" />
         <item itemvalue="Python.merge_two_sorted_lists" />
         <item itemvalue="Python.encode_and_decode_strings" />
-        <item itemvalue="Python.palindromic_substrings" />
       </list>
     </recent_temporary>
   </component>
@@ -270,6 +267,11 @@
           <url>file://$PROJECT_DIR$/tree/same_tree.py</url>
           <line>74</line>
           <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tree/design_add_and_search_words_data_structure.py</url>
+          <line>112</line>
+          <option name="timeStamp" value="39" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
