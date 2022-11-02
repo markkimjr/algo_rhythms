@@ -14,7 +14,7 @@ To take course 1 you should have finished course 0. So it is possible.
 
 from typing import List
 
-
+# TODO review problem
 class Solution:
     # O(n)
     def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
