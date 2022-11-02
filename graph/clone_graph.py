@@ -26,7 +26,7 @@ class Node:
         self.val = val
         self.neighbors = neighbors if neighbors is not None else []
 
-
+# DFS O(n)
 class Solution:
     def __init__(self):
         pass

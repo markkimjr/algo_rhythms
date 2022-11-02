@@ -33,3 +33,22 @@ def test_two_sum():
     target = 9
     assert get_sum(test_case, target) == [0, 1] or get_sum(test_case, target) == [1, 0]
 
+
+TEST_CASE = [2, 7, 11, 15]
+
+
+# sliding windows O(n)
+def get_sum2(nums: list, target: int):
+    for l in range(len(nums)):
+        r = l + 1
+        while r <= (len(nums) - 1):
+            if nums[l] + nums[r] == target:
+                return [l, r]
+            r += 1
+
+
+def test_two_sum_sliding_windows():
+    target = 9
+    assert get_sum2(TEST_CASE, target) == [0, 1]
+
+

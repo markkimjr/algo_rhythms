@@ -13,7 +13,8 @@ from typing import List
 
 TEST = [100, 4, 200, 1, 3, 2]
 
-# TODO review
+
+# TODO review + solve problem using sorting algorithm
 class Solution:
     def longestConsecutive(self, nums: List[int]) -> int:
         numSet = set(nums)
