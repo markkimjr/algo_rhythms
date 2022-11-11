@@ -16,11 +16,22 @@ class ListNode:
 
 # O(n)
 def reverse_list(head: ListNode) -> ListNode:
-    prev, curr = None, head
+    prev = None
 
-    while curr:
-        nxt = curr.next
-        curr.next = prev
-        prev = curr
-        curr = nxt
+    while head:
+        nxt = head.next
+        head.next = prev
+        prev = head
+        head = nxt
     return prev
+
+
+
+if __name__ == "__main__":
+    dummy5 = ListNode(val=5)
+    dummy4 = ListNode(val=4, next=dummy5)
+    dummy3 = ListNode(val=3, next=dummy4)
+    dummy2 = ListNode(val=2, next=dummy3)
+    dummy_head = ListNode(val=1, next=dummy2)
+
+    reverse_list(dummy_head)
